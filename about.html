@@ -2,3 +2,20 @@
 i am christopher<br>
 this is a test<br>
 <button>click me no use</button>
+<p class="matrix-holder" id="matrix" style="font-size: 18px;"></p>
+<script>
+  code = document.getElementById("matrix");
+  hexes = code.textContent.trim().split(/\s+/);
+  function animate(doAnimate){
+      code.innerHTML = ""
+      for(let i = 0;i < hexes.length;i++){
+          hexes[i] = hexes[i].trim();
+          let offset = Math.random()*2 - 2;
+          if(doAnimate) code.innerHTML += "<span class='matrix' style='animation-delay: " + offset + "s;'>" + hexes[i] + "</span> ";
+          else code.innerHTML += "<span>" + hexes[i] + "</span> ";
+          if(i%29===28) code.innerHTML += "<br>";
+      }
+  }
+  animate(false);
+  code.onclick = animate;
+</script>
