@@ -1,6 +1,6 @@
 ### Hi 
 
-feel free to look around here, or take a look at my website [dfsu.systems](http://dragonpi.space)
+feel free to look around here, or take a look at my website [dragonpi.space](http://dragonpi.space)
 
 take a look at [styxcon](https://styxcon.itch.io), our awesome dev team.
 
